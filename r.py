@@ -21,6 +21,3 @@ while True:
     else:
     	print('Conectado com sucesso')
     	break
-while True:
-    i1=API.get_candles("EURUSD",120,1,time.time())
-    print(i1)
