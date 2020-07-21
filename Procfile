@@ -1,1 +1,1 @@
-web: python r.py --log-file -
+worker: python r.py --log-file -
