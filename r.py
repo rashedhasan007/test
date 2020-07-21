@@ -22,4 +22,4 @@ while True:
     	print('Conectado com sucesso')
     	break
 i1=API.get_candles("EURUSD",120,1,time.time())
-print(l1)
+print(i1)
