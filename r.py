@@ -93,5 +93,5 @@ def my_function():
             print(candle1.candle_score(l[3],l[2],l[1]),v1)
         else :
             None
-        time.sleep(1.5)
+        time.sleep(2.5)
 my_function()
