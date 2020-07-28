@@ -77,10 +77,19 @@ def my_function():
             break
     print("ok")
     while True:
-        end_from_time=time.time()
-        data=API.get_candles("EURUSD",120,5, end_from_time)
-        l=data
-        res_len(res1)
+        M=multiply(res1,money)
+        if M>230:
+            tim=300
+            time.sleep(30)
+            end_from_time=time.time()
+            data=API.get_candles("EURUSD",120,5, end_from_time)
+            l=data
+            res_len(res1)
+        else:
+            end_from_time=time.time()
+            data=API.get_candles("EURUSD",120,5, end_from_time)
+            l=data
+            res_len(res1)
         try:
             t=candle1.candle_score(l[3],l[2],l[1])[0]
         except:
