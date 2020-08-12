@@ -8,3 +8,5 @@ git+git://github.com/Lu-Yi-Hsun/iqoptionapi
 pytesseract
 tesseract
 Pillow==2.2.2
+tesseract-ocr
+libtesseract-dev
