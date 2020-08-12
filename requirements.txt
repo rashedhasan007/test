@@ -9,4 +9,4 @@ pytesseract
 tesseract
 Pillow==2.2.2
 tesseract-ocr
-libtesseract-dev
+libleptonica-dev
