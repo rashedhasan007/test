@@ -32,7 +32,7 @@ def news(news_name):
     else:
       i=i+1
   return i
-print(news('Retail Sales (MoM)  (Jul)'))
+print(news('Building Permits  (Jul)'))
 
 def buyoption(forecast,actual):
   if forecast[0]<=actual[0]:
