@@ -36,10 +36,10 @@ print(news('Building Permits  (Jul)'))
 
 def buyoption(forecast,actual):
   if forecast[0]<=actual[0]:
-    status,id = API.buy(200,"USDJPY",'call',1)
+    status,id = API.buy(200,"USDJPY",'call',2)
     print("buy")
   elif forecast[0]>=actual[0]:
-    status,id = API.buy(200,"USDJPY",'put',1)
+    status,id = API.buy(200,"USDJPY",'put',2)
     print("sell")
   else:
     None
