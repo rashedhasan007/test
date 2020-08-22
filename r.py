@@ -17,6 +17,8 @@ def query_example():
     # print( type(response) ) # <class 'requests.models.Response'>
     #img = Image.open(io.BytesIO(response.content))
     img = Image.open(BytesIO(response.content))
+    # Convert to gray
+    img=img.convert('L')
     text = pytesseract.image_to_string(img,lang="ben")
 
     return '''<h1>The language value is: {}</h1>'''.format(text)
