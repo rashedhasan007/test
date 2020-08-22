@@ -2,7 +2,7 @@ import pytesseract
 from PIL import Image, ImageEnhance, ImageFilter
 import os
 
-im = Image.open("bangla.jpg") # the second one
+im = Image.open("bangla.png") # the second one
 im = im.filter(ImageFilter.MedianFilter())
 enhancer = ImageEnhance.Contrast(im)
 im = enhancer.enhance(2)
