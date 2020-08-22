@@ -7,3 +7,4 @@ gunicorn==20.0.4
 git+git://github.com/Lu-Yi-Hsun/iqoptionapi
 Pillow==2.2.2
 pytesseract
+flask==1.1.2
