@@ -1,1 +1,1 @@
-worker: python r.py --log-file -
+web: gunicorn --bind 0.0.0.0:$PORT r:app
