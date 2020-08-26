@@ -1,10 +1,8 @@
 pylint
 requests
 absl-py
-websocket-client==0.56
 numpy==1.16.2
 gunicorn==20.0.4
-git+git://github.com/Lu-Yi-Hsun/iqoptionapi
 Pillow==2.2.2
 pytesseract
 flask==1.1.2
