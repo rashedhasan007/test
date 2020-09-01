@@ -14,6 +14,7 @@ def main():
 def query_example():
     language = request.args.get('language') #if key doesn't exist, returns None
     response = requests.get(language)
+    pytesseract.pytesseract.tesseract_cmd = r'.\Tesseract-OCR\tesseract'
     # print( type(response) ) # <class 'requests.models.Response'>
     #img = Image.open(io.BytesIO(response.content))
     img = Image.open(BytesIO(response.content))
