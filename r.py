@@ -16,5 +16,4 @@ valid = sphincs.verify(message, signature, public_key)
 # Verify tampered message + signature
 message = b'Tampered msg'
 valid = sphincs.verify(message, signature, public_key)
-print("Tampered message:", message)
 print("Tampered signature valid?", valid)
