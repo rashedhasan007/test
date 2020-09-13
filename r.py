@@ -11,9 +11,7 @@ print("Private key:", binascii.hexlify(secret_key))
 message = b'Message for SPHINCS+ shake256_128f signing'
 signature = sphincs.sign(message, secret_key)
 valid = sphincs.verify(message, signature, public_key)
-print("Message:", message)
-print("Signature:", binascii.hexlify(signature))
-print("Signature valid?", valid)
+
 
 # Verify tampered message + signature
 message = b'Tampered msg'
