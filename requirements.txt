@@ -3,6 +3,5 @@ requests
 absl-py
 numpy==1.16.2
 gunicorn==20.0.4
-Pillow>=7.1.0
-pytesseract
-flask==1.1.2
+web3
+PySPX
