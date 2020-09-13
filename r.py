@@ -1,4 +1,5 @@
 import pyspx.shake256_128f
+import os, binascii
 seed = os.urandom(sphincs.crypto_sign_SEEDBYTES)
 public_key, secret_key = pyspx.shake256_128f.generate_keypair(seed)
 signature = pyspx.shake256_128f.sign(message, secret_key)
